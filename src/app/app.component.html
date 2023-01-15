@@ -1,0 +1,88 @@
+<app-header></app-header>
+
+<div>
+    <div class="outer-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between start">
+<!-- First Column -->
+        <div fxFlex="20" class="first-column" fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxLayoutAlign="center">
+                <img width="150px" height="150px" src="/assets/image.png">
+                <h1 class="text">Jone Smith</h1>
+                <span style="color:gray;text-align:center;">CFA, CIC</span>
+                <span style="text-align:center;">
+                    <img width="20px" height="20px" src="/assets/king.png"/>
+                    Premium member
+                </span>
+                <h5 style="text-align:center;">
+                    <img width="20px" height="20px" src="/assets/mortalboard.png"/>
+                    Insurence Agent,Attorney, <br>Accountant
+                </h5>
+            </div>
+            
+            
+            
+        </div>
+
+<!-- Second Column -->
+
+    <div fxFlex="79" class="second-column">
+        <div>
+                <p>
+                <mat-toolbar>
+                  <span>My Application</span>
+                </mat-toolbar>
+              </p>
+
+              <div 
+              fxLayout="row" 
+              fxLayoutAlign="space-between start" 
+              style="padding:5px;border-bottom: 1px solid rgb(226, 220, 220);">
+                <h4>
+                    <mat-icon style="color: #E7EACF;">person</mat-icon>
+                    <span>Profile</span>
+                </h4>
+
+                <button
+                fxShow="true"
+                mat-button
+                fxLayoutAlign="end"
+                class="red-btn"
+                (click)="openDialog()"
+                >
+                Edit Profile
+                </button>
+              </div>
+
+              <div class="info">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Domain:</th>
+                        <td>{{domain}}</td>
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td>{{gender}}</td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth:</th>
+                        <td>{{dob}}</td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number:</th>
+                        <td>{{phoneNumber}}</td>
+                    </tr>
+                    <tr>
+                        <th>Location:</th>
+                        <td>{{location}}</td>
+                    </tr>
+                </table>
+              </div>
+
+        </div>
+    </div>
+    </div>
+
+</div>

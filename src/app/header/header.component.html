@@ -1,0 +1,94 @@
+<mat-toolbar color="primary" class="sticky">
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <button fxShow.xs="true" fxHide="true" [matMenuTriggerFor]="menu"  mat-icon-button>
+            <mat-icon>menu</mat-icon>
+          </button>
+
+        <img style="margin:0;" width="50px" height="50px" src="./assets/logo.png"/>
+          <div fxLayout="column">
+            <span class="logo">Legacy life Plans</span>
+            <span style="font-size:10px;margin-top:-12px;font-family: cursive;" class="logo">Passing on...Pease of mind</span>
+          </div>
+        
+
+        <div fxShow="true" fxHide.xs="true" fxLayout="row">
+
+          <button mat-button>
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+
+          <button mat-button>
+            <mat-icon>peoples</mat-icon>
+            Trustees
+        </button>
+
+          <button mat-button style="color:red">
+            <mat-icon style="color:red">person</mat-icon>
+            Professionals
+        </button>
+
+        <button mat-button>
+          <mat-icon>more_horiz</mat-icon>
+          More
+      </button>
+
+        </div>
+      </div>
+
+      <div fxLayoutAlign="row">
+
+        <button
+          fxShow="true"
+          fxHide.xs="true"
+          mat-button
+          fxLayoutAlign="end"
+        >
+        <mat-icon style="color:black">search</mat-icon>
+        </button>
+
+        <button
+          fxShow="true"
+          fxHide.xs="true"
+          mat-button
+          fxLayoutAlign="end"
+          class="red-btn"
+        >
+        <mat-icon>mail</mat-icon>
+          Invite
+        </button>
+
+        <img width="40px" height="40px" src="./assets/image.png"/>
+
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      Home
+  </button>
+
+    <button mat-menu-item>
+      <mat-icon>peoples</mat-icon>
+      Trustees
+  </button>
+
+    <button mat-menu-item style="color:red">
+      <mat-icon style="color:red">person</mat-icon>
+      Professionals
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon>more_horiz</mat-icon>
+    More
+</button>
+
+   <button mat-menu-item style="background-color: red;color: white;">
+        <mat-icon style="color: white;">mail</mat-icon>
+          Invite
+  </button>
+
+  </mat-menu>
